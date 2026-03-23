@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready-to-Purchase Works | Abdalhay Salem</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Explore high-end digital assets and ready-to-purchase web designs by Abdalhay Salem. Premium quality, instant value.">
+    <meta property="og:title" content="Ready-to-Purchase Works | Premium Digital Assets">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .purchase-hero {
+            padding: 12rem 0 6rem;
+            text-align: center;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        .product-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+        .product-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0;
+            filter: grayscale(0.5);
+            transition: var(--transition-smooth);
+        }
+        .product-card:hover .product-image {
+            filter: grayscale(0);
+        }
+        .product-info {
+            padding: 2rem;
+        }
+        .product-price {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .product-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .product-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🪄 Floating Visual Effects -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="grain-overlay"></div>
+
+    <!-- ───────── NAVBAR ───────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner container">
+            <a href="index.html#home" class="logo">Web<span>Mastery</span></a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#portfolio">Projects</a>
+                <a href="ready-to-purchase.html" class="active">Ready-to-Purchase</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+
+            <div class="nav-socials">
+                <a href="https://www.facebook.com/profile.php?id=61578517499222" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/web_mastery99" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/218931971792" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ───────── PURCHASE HERO ───────── -->
+    <section class="purchase-hero container scroll-reveal">
+        <div class="section-header" style="margin: 0 auto;">
+            <span>PREMIUM ASSETS</span>
+            <h2>Ready-to-Purchase <span>Works</span></h2>
+            <p>Save time and level up your project with our curated collection of high-end templates and digital assets.</p>
+        </div>
+    </section>
+
+    <!-- ───────── PRODUCTS SECTION ───────── -->
+    <section class="section container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card scroll-reveal">
+                <img src="work1.png" alt="SaaS Landing Page Template" class="product-image">
+                <div class="product-info">
+                    <span class="product-tag">UI Kit / Template</span>
+                    <div class="product-price">$49.00</div>
+                    <h3 class="product-title">Premium SaaS Landing Page Template</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A high-converting, fully responsive landing page designed for modern SaaS companies.</p>
+                    <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card scroll-reveal">
+                <img src="work2.png" alt="Business Portfolio Template" class="product-image">
+                <div class="product-info">
+                    <span class="product-tag">UI Kit / Template</span>
+                    <div class="product-price">$39.00</div>
+                    <h3 class="product-title">Minimalist Business Portfolio</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">Elegant and clean portfolio design to showcase your expertise and attract high-end clients.</p>
+                    <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card scroll-reveal">
+                <img src="work3.png" alt="Creative Agency Kit" class="product-image">
+                <div class="product-info">
+                    <span class="product-tag">UI Kit / Template</span>
+                    <div class="product-price">$59.00</div>
+                    <h3 class="product-title">Creative Agency Web Kit</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A complete set of tools and sections for building a stunning creative agency website.</p>
+                    <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card scroll-reveal">
+                <img src="work4.png" alt="E-commerce Shell" class="product-image">
+                <div class="product-info">
+                    <span class="product-tag">UI Kit / Template</span>
+                    <div class="product-price">$69.00</div>
+                    <h3 class="product-title">Modern E-commerce Shell</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">A futuristic approach to e-commerce, focusing on immersive product experiences.</p>
+                    <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── FOOTER ───────── -->
+    <footer class="footer container">
+        <div class="footer-inner">
+            <a href="index.html#home" class="logo">Web<span>Mastery</span></a>
+            <p class="copyright">&copy; 2026 Abdalhay Salem. Crafted with ❤️.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=61578517499222"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/web_mastery99"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/218931971792"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
