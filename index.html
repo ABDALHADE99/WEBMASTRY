@@ -252,15 +252,17 @@
             </div>
 
             <form class="contact-form scroll-reveal" id="contact-form">
-                <div class="form-row">
-                    <input type="text" class="input-box" placeholder="Your Name" required>
-                    <input type="email" class="input-box" placeholder="Your Email" required>
-                </div>
-                <input type="text" class="input-box" placeholder="Subject">
-                <textarea class="input-box" placeholder="Tell me about your business and what you want to achieve..." required></textarea>
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                    Start My Project 🚀
-                </button>
+    <div class="form-row">
+        <input type="text" name="user_name" class="input-box" placeholder="Your Name" required>
+        <input type="email" name="user_email" class="input-box" placeholder="Your Email" required>
+    </div>
+    <input type="text" name="subject" class="input-box" placeholder="Subject">
+    <textarea name="message" class="input-box" placeholder="Tell me about your business..." required></textarea>
+    
+    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Start My Project 🚀
+    </button>
+</form>
             </form>
         </div>
     </section>
@@ -277,7 +279,7 @@
             </div>
         </div>
     </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>`
 </html>
