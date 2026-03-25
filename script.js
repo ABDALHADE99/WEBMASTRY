@@ -169,3 +169,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+// تشغيل EmailJS
+(function(){
+    emailjs.init("DVJmjUhGkWU7Gphzn"); // ← حط المفتاح هنا
+})();
+
+// إرسال الفورم
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_lj4bves", "template_ab1oaei", this)
+    .then(function() {
+        alert("✅ Message sent successfully! I will contact you soon.");
+    }, function(error) {
+        alert("❌ Failed to send message. Try again.");
+        console.log(error);
+    });
+});
